@@ -1,3 +1,5 @@
+### Load Value Prediction
+
 The purpose of load value prediction is to be able to predict the value of a memory load instruction.
 
 Recall that memory accesses can be hundreds or thousands of cycles and can lead to significant pipeline stalls, especially on cache misses.
@@ -7,10 +9,6 @@ Similar to our branch misprediction scenario in speculative tomasulo, if our loa
 If we correctly predicted, then great! We continue running on and benefited from executing instructions speculatively.
 
 A major reason why value prediction works is that programs tend to exhibit value similarity behaviors where values tend to be similar either spatially (neighboring memory addresses) or temporally (repeated access to the same memory location does not change, for example, a constant value in memory).
-
-Team Member:
-    Krishna Kabi 862255132 <br />
-	Sheenam Gupta 862254462
 
 ## Install
 This project entails usage of below 3 packages which can be easily installed:
