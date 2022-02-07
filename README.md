@@ -2,7 +2,7 @@
 
 The purpose of load value prediction is to be able to predict the value of a memory load instruction.
 
-Recall that memory accesses can be hundreds or thousands of cycles and can lead to significant pipeline stalls, especially on cache misses.
+The memory accesses can be hundreds or thousands of cycles and can lead to significant pipeline stalls, especially on cache misses.
 One unique solution around this is to be able to predict the value of the load instruction and speculatively execute based on the predicted load value.
 Later when the actual memory load value returns, we can compare and check to see if our load value was correctly predicted or not.
 Similar to our branch misprediction scenario in speculative tomasulo, if our load value is mispredicted we simply rollback by flushing the ROB.
@@ -39,7 +39,7 @@ The tracefile to run for can also be updated in config.
 #### Config 
 We use config file, to pass parameters to the module. Any change to parameters should be done in config file. 
 
-LVPT_index : this parameter choses the n of LSB from PC address. It determines how big the tablw would be <br />
+LVPT_index : this parameter choses the n of LSB from PC address. It determines how big the table would be <br />
 LVPT_hist_bit: it stores the history depth i.e the no. of past history of the predictions  <br />
 Counter_bit: 4 (kept as constant) <br />
 threshold: this parameter can be tweaked based on what threshold we want to predict  <br />
