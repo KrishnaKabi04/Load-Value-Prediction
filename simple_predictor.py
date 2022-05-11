@@ -23,7 +23,7 @@ class ValuePredictor:
         self.actual_v= int(line[3], 16)
 
 
-# Press the green button in the gutter to run the script.
+
 if __name__ == '__main__':
 
     vp= ValuePredictor()
